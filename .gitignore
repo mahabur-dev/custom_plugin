@@ -1,16 +1,14 @@
 # Ignore everything in wp-content
-/wp-content/*
+
 
 # But track these directories
-!/wp-content/plugins/
-!/wp-content/themes/
-!/wp-content/mu-plugins/
+/wp-content/themes/
+/wp-content/mu-plugins/
 
 # Ignore everything in plugins
-/wp-content/plugins/*
 
 # But track your custom plugin(s)
-!/wp-content/plugins/your-custom-plugin-name/
+/wp-content/plugins/your-custom-plugin-name/
 
 # Ignore everything in themes except your custom theme
 /wp-content/themes/*
@@ -40,8 +38,6 @@ wp-config.php
 node_modules/
 
 # Environment files
-.env
-.env.*
 !.env.example
 
 # OS files
@@ -49,7 +45,6 @@ node_modules/
 Thumbs.db
 
 # IDE files
-.vscode/
 .idea/
 *.sublime-*
 
@@ -62,3 +57,8 @@ debug.log
 *.map
 /dist/
 /build/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
